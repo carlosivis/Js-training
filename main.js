@@ -19,9 +19,9 @@ friendlyFetch(baseURL+"anime")
 
             console.log(anime)
             
-            container.append(title.appendChild(name))
-            container.append(addImg.appendChild(img))
-            container.append(sinop.appendChild(sinopse))
+            container.append(name)
+            container.append(img)
+            container.append(sinopse)
             
             }
     })

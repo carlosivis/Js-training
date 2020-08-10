@@ -2,7 +2,17 @@ img{
     border: indigo;
     border-radius: 20px;
 }
-
+input{
+    border: inherit;
+    border-radius: 20px;
+    background-color: rgb(240, 219, 255);
+}
+.container{
+    border-style: double;
+    border-color: indigo;
+    padding: 1px;
+    box-shadow: 10px;
+}
 body{
     background-color: #F0FFF0;  
     margin-left: 110px;
