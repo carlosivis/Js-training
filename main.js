@@ -2,14 +2,13 @@ import { friendlyFetch } from './data.js'
 
 const baseURL = "https://kitsu.io/api/edge/"
   
-
-
 friendlyFetch(baseURL+"anime")
     .then(response => {
         for(let i in response.data){
             const container = document.querySelector("#container")
             const addImg = document.querySelector("#contex")
             const sinop = document.querySelector("#text")
+            const title = document.querySelector("#title")
             const img = document.createElement('img')
             const name =  document.createElement('H1')
             const sinopse =  document.createElement('H5')
@@ -20,9 +19,9 @@ friendlyFetch(baseURL+"anime")
 
             console.log(anime)
             
-            container.appendChild(name)
-            container.appendChild(addImg.appendChild(img))
-            container.appendChild(sinopse)
+            container.append(title.appendChild(name))
+            container.append(addImg.appendChild(img))
+            container.append(sinop.appendChild(sinopse))
             
             }
     })
